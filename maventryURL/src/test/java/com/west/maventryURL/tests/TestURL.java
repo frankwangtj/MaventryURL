@@ -19,6 +19,7 @@ public class TestURL {
 	  driver.manage().window().maximize();
 	  System.out.println("Start to test--testGoogleURL");
 	  System.out.println("Try second commit");
+	  System.out.println("Try third time commit");
 
   }
 
