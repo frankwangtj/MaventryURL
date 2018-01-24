@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 public class LogIn_PG_POF {
 	final WebDriver driver;
@@ -16,4 +17,15 @@ public class LogIn_PG_POF {
 	public LogIn_PG_POF(WebDriver driver){ 
 		this.driver = driver; 
     } 
+	
+	//This method will take two argutments (username and password)
+	public void LogIn_Action(String sUserName, String sPassword){
+		Home_PG_POF HomePage = PageFactory.initElements(driver, Home_PG_POF.class);
+		HomePage.lnk_MyAccount.click();
+		txtbx_UserName.sendKeys(sUserName);
+		txtbx_Password.sendKeys(sPassword);
+		btn_Login.click();
+
+	}
+	
 }
