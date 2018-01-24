@@ -10,6 +10,7 @@ import com.west.maventryURL.pageObjects.*;
 public class TestCase_POF {
 	static WebDriver driver;
 	public static void main(String[] args) throws InterruptedException{
+		System.setProperty("webdriver.gecko.driver","C:\\003_RunningEnvironment\\02_GeckoDriver16\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.store.demoqa.com");
