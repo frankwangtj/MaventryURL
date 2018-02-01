@@ -24,6 +24,7 @@ public class TestCase_POF {
 		LoginPage.btn_Login.click();
 		System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 		HomePage.lnk_LogOut.click();
+		System.out.println("Try git");
 		driver.quit();
 	}
 
